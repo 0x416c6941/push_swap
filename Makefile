@@ -47,6 +47,7 @@ MAKE = make
 LIBFT_DIR = $(EXTERNAL_DIR)/Libft
 LIBFT_NAME = libft.a
 LIBFT = $(LIBFT_DIR)/$(LIBFT_NAME)
+LIBFT_CLEAN = fclean
 
 # Targets.
 all: $(NAME)
@@ -64,7 +65,7 @@ $(LIBFT):
 .PHONY: clean
 clean:
 	rm -rf $(OBJ_DIR)
-	$(MAKE) -C $(LIBFT_DIR) fclean
+	$(MAKE) -C $(LIBFT_DIR) $(LIBFT_CLEAN)
 
 .PHONY: fclean
 fclean: clean
