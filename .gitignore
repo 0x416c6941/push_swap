@@ -1,0 +1,16 @@
+# Vim files.
+.vimrc
+*.swp
+
+# Binary, object files.
+a.out
+*.o
+push_swap
+checker_linux
+
+# Dependency files
+*.d
+
+# Compiled libraries.
+*.a
+*.so
